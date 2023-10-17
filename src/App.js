@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "./components/Header";
 import Userinput from "./components/Userinput";
 import ResultsTable from "./components/ResultsTable";
+import "./App.css";
 
 function App() {
   const [userInput, setUserInput] = useState(null);
@@ -32,7 +33,7 @@ function App() {
 
   return (
     <div className="App">
-      Hello
+      React App
       <Header />
       <Userinput onCalculate={calculateHandler} />
       {!userInput && (
