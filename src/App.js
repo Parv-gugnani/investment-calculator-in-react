@@ -15,18 +15,17 @@ function App() {
   if (userInput) {
     let currentSaving = +userInput["current-saving"];
     const yearlyContri = +userInput["yearly-contribution"];
-    const expectedRetr = +userInput["expected-return"] / 100; // Removed the extra '+'
+    const expectedRetr = +userInput["expected-return"] / 100;
     const duration = +userInput["duration"];
 
     for (let i = 0; i < duration; i++) {
-      const yearlyIntst = currentSaving * expectedRetr; // Changed '+' to '*'
-      currentSaving += yearlyIntst + yearlyContri; // Fixed the calculation
+      const yearlyIntst = currentSaving * expectedRetr;
+      currentSaving += yearlyIntst + yearlyContri;
       yearlyData.push({
-        // Changed 'yearlyContri' to 'yearlyData'
         year: i + 1,
         yearlyIntst: yearlyIntst,
         savingEndofYear: currentSaving,
-        yearlyContri: yearlyContri, // You can keep this if you need it
+        yearlyContri: yearlyContri,
       });
     }
   }

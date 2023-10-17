@@ -1,0 +1,35 @@
+/* App.css */
+.App {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.Header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+}
+
+.Userinput {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.ResultsTable {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Add more styles as needed for different components or elements in your app */
