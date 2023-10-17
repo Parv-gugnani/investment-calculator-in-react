@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Header from "./components/Header";
-import Userinput from "./components/Userinput";
 import ResultsTable from "./components/ResultsTable";
+import Userinput from "./components/Userinput";
 import "./App.css";
 
 function App() {
